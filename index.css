@@ -1,4 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Corinthia:wght@700&family=Kaisei+Decol&family=Oswald:wght@200;300;400&family=Red+Hat+Mono:ital,wght@0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Corinthia:wght@700&family=Kaisei+Decol&family=Oswald:wght@200;300;400&family=Red+Hat+Mono:ital,wght@0,500;1,500;1,700&display=swap');
+
 body {
-    color: white;
+    margin-top: 0;
+    margin-left: 0;
+    overflow-x: hidden;
     background: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section-1 {
+    color: #7dff5d;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/world_peace_background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    margin-left: 0;
+}
+
+#headline {
+    position: absolute;
+    left: 52.85%;
+    right: 15.61%;
+    top: 9%;
+    bottom: 83.79%;
+
+    font-family: 'Red Hat Mono';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.95em;
+    line-height: 86px;
+    text-align: center;
+    z-index: 5000;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    
+    position: absolute;
+    left: 0vh;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0.5vw;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.section-2 p {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    font-family: 'Red Hat Mono';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3em;
+    color: rgb(250, 250, 233);
+    line-height: 112px;
+}
+
+.section-2 h1 {
+    display: inline;
+    font-family: 'Red Hat Mono';
+    font-size: 2.5em;
+    font-weight: 500;
+  
+}
+
+.p5Canvas {
+position: absolute;
+top: 0vh;
+left: 0;
+overflow-x:hidden;
+}
+
+#here-button {
+    cursor: cell;
+}
+
+div#menu {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: 'Red Hat Mono';
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgba(255, 30, 248, 0.255);
+    margin-top: 51.5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100vw;
+   
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 7, 0.42);
+}
+
+#footer {
+    position: absolute;
+    top: 95vh;
+    width: 100vw;
+    height: 6vh;
+    overflow-y: hidden;
+    background-image: url(./assets/world_peace_background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 35%;
+}
+
+/* #faq {
+    position: absolute;
+    top: 88vh;
+    left:40vw;
+    z-index: 90;
+    font-size: 1.5em;
+} */
+
