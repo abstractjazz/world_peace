@@ -15,14 +15,15 @@ html {
 
 #form-container {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15%;
+    left: 20.5%;
     padding-left: 12.5%;
     padding-right: 3vw; 
-    width: 100vw;
+    width: 45vw;
     background: white;
     display: flex;
     flex-direction: column;
+    border: 3px solid black;
     /* align-items: center;
     justify-content: center;  */
     z-index: 33000;
@@ -35,7 +36,7 @@ html {
     border-left: transparent;
     border-right: transparent;
     border-bottom: 2px solid rgb(0, 0, 0);
-    width: 75vw;
+    width: 75%;
 }
 #form textarea {
     border: none;
@@ -43,13 +44,19 @@ html {
     border-left: transparent;
     border-right: transparent;
     border-bottom: 2px solid rgb(0, 0, 0);
-    width: 75vw;
+    width: 75%;
 }
 
 #form button {
     background-color:rgba(250, 235, 215, 0);
     border: 2px solid black;
-    width: 75vw;
+    width: 75%;
+    cursor: cell;
+}
+
+#form-p {
+    color:rgb(0, 102, 255);
+    font-style: italic;
 }
 
 #section-1 {

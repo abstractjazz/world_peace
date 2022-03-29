@@ -51,24 +51,65 @@ function setup() {
 
   }
 
-  const handleClick = function(){
-    const form=document.createElement('form')
-    form.id="beta-form"
-    const formCheck=document.getElementById('beta-form')
-    const section2=document.querySelector('.section-2')
-    if (formCheck===null) {
-      section2.appendChild(form)
-      } else { 
-    }
-  }
+  // const handleClick = function(){
+  //   // const form=document.getElementById('form')
+  //   const formCheck=document.getElementById('form')
+  //   const section2=document.querySelector('.section-2')
+  //   if (formCheck===null) {
+  //     section2.appendChild(form)
+  //     } else { 
+  //   }
+  // }
   
-  hereButton.onclick=handleClick;
+  // hereButton.onclick=toggleForm;
   hereButton.onmouseenter=addPointer
   hereButton.onmouseleave=function(){
   const pointer=document.getElementById('big-pointer')
   pointer.remove();
   }
+
+  function toggleForm() {
+    
+    //controls menu behavior
+      const form = document.getElementById("form-container");
+      // const blur = document.getElementById("blur-wrapper")
+      // const nav = document.getElementById('nav')
+      // const bars = document.getElementById('bars')
+      if (form.style.display === "block") {
+        form.style.display = "none";
+        // bars.className="fa fa-bars"
+      } else {
+        form.style.display = "block";
+        // bars.className="fa fa-times"
+      }
+    }
+  function toggleFormTwo() {
+    
+    //controls menu behavior
+      const form = document.getElementById("form-container");
+      // const blur = document.getElementById("blur-wrapper")
+      // const nav = document.getElementById('nav')
+      // const bars = document.getElementById('bars')
+      if (form.style.display === "block") {
+        window.scrollTo(0,0)
+        // form.style.display = "none";
+        // bars.className="fa fa-bars"
+      } else {
+        form.style.display = "block";
+        window.scrollTo(0,0)
+        // bars.className="fa fa-times"
+      }
+    }
+
+
+    const bigButton = document.getElementById('big-button')
+
+    bigButton.onclick=toggleForm;
+    hereButton.onclick=toggleFormTwo;
+    
   
+
+
 
 
   // const form = document.getElementById('beta-form')
@@ -81,4 +122,3 @@ function setup() {
   // function autoScroll(){
   //   window.scrollTo(0, 100)
   // }
-
