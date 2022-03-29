@@ -12,6 +12,46 @@ html {
     scroll-behavior: smooth;
 }
 
+
+#form-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 12.5%;
+    padding-right: 3vw; 
+    width: 100vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;  */
+    z-index: 33000;
+    font-family: 'Red Hat Mono';
+}
+
+#form input {
+    border: none;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 75vw;
+}
+#form textarea {
+    border: none;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 75vw;
+}
+
+#form button {
+    background-color:rgba(250, 235, 215, 0);
+    border: 2px solid black;
+    width: 75vw;
+}
+
 #section-1 {
     color: #7dff5d;
     height: 100vh;
@@ -41,6 +81,36 @@ html {
     z-index: 5000;
 }
 
+
+#big-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 90vh;
+    width: 99.6vw;
+    left: 0;
+    /* height:25vh;
+    width: 20vw; */
+    /* background-image: url('./assets/ice-cream.png'); */
+    /* background-color: rgba(17, 17, 17, 0.351); */
+    background-position: top;
+    background-size: contain;
+    border: 2px solid white;
+    color: #7dff5d;
+    cursor: cell;
+    font-size: 1.25em;
+    font-family: 'Red Hat Mono';
+    font-weight: 700;
+    z-index: 35000
+}
+
+
+div#big-button p {
+ text-shadow: 2px 2px #000000;   
+}
+
+
 .section-2 {
     display: flex;
     flex-direction: row;
@@ -55,6 +125,9 @@ html {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+
+
 
 .section-2 p {
     position: absolute;
@@ -120,6 +193,7 @@ div#menu {
     background-repeat: no-repeat;
     padding-top: 35%;
 }
+
 
 /* #faq {
     position: absolute;

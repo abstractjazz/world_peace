@@ -9,8 +9,43 @@
     <title>world_peace ✺</title>
 </head>
 <body>
+    <div id="form-container">
+        <form id="form" name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name<br> <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email<br> <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>How would you describe what you do?</label>
+                <select name="intake-form" class="select" id="intake-select">
+                <optgroup id="profile-list">
+                  <option value="" selected="">Select</option>
+                  <option value="I'm an Artist">Artist</option>
+                  <option value="I'm a Solo Entrepreneur">Solo Entrepreneur</option>
+                  <option value="I run a creative business">Creative Entrepreneur</option>
+                  <option value="I'm just curious">Just curious, tbh</option>
+                  <option value="Other">I do something else</option>
+                </optgroup>
+                </select>
+            <p>
+              <label>If something else, what do you do? (a sentence is plenty)<br><textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <label>What's the main thing you'll use your website for? (can be as short or long as you like): <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          
+    </div>
     <section id="section-1">
         <h1 id="headline">world_peace()</h1>
+        <div id="big-button">
+            <p>I want a cool website.</p>
+        </div>
     </section>
 
     <section class="section-2">

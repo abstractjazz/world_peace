@@ -34,7 +34,7 @@ function setup() {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
   
-
+  
   const addPointer=function() {
     const left_position=getRndInteger(1233,1300)
     const top_position=getRndInteger(493,625)
@@ -68,8 +68,9 @@ function setup() {
   const pointer=document.getElementById('big-pointer')
   pointer.remove();
   }
-
   
+
+
   // const form = document.getElementById('beta-form')
   
  
